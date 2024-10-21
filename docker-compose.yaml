@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14.1-alpine
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=springbootgraphql
+      - POSTGRES_PASSWORD=springbootgraphql
+      - POSTGRES_DB=springbootgraphql
